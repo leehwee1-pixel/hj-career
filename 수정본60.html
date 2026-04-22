@@ -1882,28 +1882,33 @@ nav{justify-content:center !important;}
     <div class="hr-row-right">
       <p class="grade-note">HJ중공업은 각 직급별 역할과 성과를 객관적으로 체계화합니다.</p>
       <style>
-        .grade-unit { display:flex; flex-direction:column; align-items:center; flex:1; }
-        .grade-box-new { width:100%; text-align:center; background:#fff; border:1px solid #c8e6c9; padding:10px 4px 8px; font-size:13px; font-weight:800; color:#2e7d32; border-radius:0; }
-        .grade-unit:first-child .grade-box-new { border-radius:7px 0 0 7px; }
-        .grade-unit:last-child .grade-box-new { border-radius:0 7px 7px 0; background:#1b2e24; color:#34c25a; border-color:#1b2e24; }
-        .grade-arr-wrap {
-          display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
-          flex-shrink:0; gap:0; padding-top:0;
+        .grade-unit { display:flex; flex-direction:column; align-items:center; }
+        .grade-box-new {
+          text-align:center; background:#fff; border:2px solid #c8e6c9;
+          padding:12px 22px; font-size:15px; font-weight:800; color:#2e7d32;
+          border-radius:8px; white-space:nowrap;
         }
-        .grade-arr-icon { font-size:13px; color:#2a8a40; line-height:1; margin-top:10px; }
-        .grade-dur { font-size:12px; color:#888; font-weight:800; letter-spacing:0.2px; white-space:nowrap; margin-top:8px; }
+        .grade-unit:last-child .grade-box-new { background:#1b2e24; color:#34c25a; border-color:#1b2e24; }
+        .grade-arr-wrap {
+          display:flex; flex-direction:column; align-items:center;
+          flex-shrink:0; padding:0 6px;
+        }
+        .grade-arr-icon {
+          font-size:22px; color:#2a8a40; line-height:1; margin-top:8px;
+        }
+        .grade-dur { font-size:12px; color:#888; font-weight:800; margin-top:6px; white-space:nowrap; }
       </style>
-      <div class="grade-bar-new" style="align-items:flex-start;">
+      <div class="grade-bar-new" style="align-items:flex-start; justify-content:flex-start; flex-wrap:wrap; gap:0;">
         <div class="grade-unit"><div class="grade-box-new">사원</div></div>
-        <div class="grade-arr-wrap"><div class="grade-arr-icon">→</div><div class="grade-dur">3년</div></div>
+        <div class="grade-arr-wrap"><div class="grade-arr-icon">➜</div><div class="grade-dur">3년</div></div>
         <div class="grade-unit"><div class="grade-box-new">대리</div></div>
-        <div class="grade-arr-wrap"><div class="grade-arr-icon">→</div><div class="grade-dur">3년</div></div>
+        <div class="grade-arr-wrap"><div class="grade-arr-icon">➜</div><div class="grade-dur">3년</div></div>
         <div class="grade-unit"><div class="grade-box-new">과장</div></div>
-        <div class="grade-arr-wrap"><div class="grade-arr-icon">→</div><div class="grade-dur">5년</div></div>
+        <div class="grade-arr-wrap"><div class="grade-arr-icon">➜</div><div class="grade-dur">5년</div></div>
         <div class="grade-unit"><div class="grade-box-new">차장</div></div>
-        <div class="grade-arr-wrap"><div class="grade-arr-icon">→</div><div class="grade-dur">5년</div></div>
+        <div class="grade-arr-wrap"><div class="grade-arr-icon">➜</div><div class="grade-dur">5년</div></div>
         <div class="grade-unit"><div class="grade-box-new">부장</div></div>
-        <div class="grade-arr-wrap"><div class="grade-arr-icon">→</div><div class="grade-dur" style="visibility:hidden;">-</div></div>
+        <div class="grade-arr-wrap"><div class="grade-arr-icon">➜</div><div class="grade-dur" style="visibility:hidden;">-</div></div>
         <div class="grade-unit"><div class="grade-box-new">임원</div></div>
       </div>
       <p class="grade-note">뛰어난 역량을 갖춘 인재는 승진 적체 없이 성장할 수 있으며, 개인의 성장과 회사의 발전을 위한 도전적인 인사 문화를 지향합니다.</p>
